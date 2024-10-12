@@ -1,0 +1,89 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the login form */
+.login-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto; /* Centrando el formulario */
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px; /* Asegurando que el tamaño de la fuente sea el mismo */
+}
+
+/* Form styling */
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login-container input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+.login-container input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styling */
+.login-container button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Link to register page */
+.login-container .register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-container .register-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container .register-link a:hover {
+    text-decoration: underline;
+}

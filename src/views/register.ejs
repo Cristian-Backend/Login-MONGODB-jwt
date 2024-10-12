@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/errores.css">
+ 
+    <link rel="stylesheet" href="css/registerLogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+
+
+
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            </ul>
+        </aside>
+
+               
+        <!-- FORMULARIO REGISTER -->
+<div class="register-container">
+    <h2>Register</h2>
+
+    
+    <% if (errors && errors.length > 0) { %>
+        <div class="error-messages">
+            <ul>
+                <% errors.forEach(error => { %>
+                    <li><%= error %></li>
+                <% }) %>
+            </ul>
+        </div>
+    <% } %>
+
+
+    <form action="/register" method="POST">
+    
+        <label for="fullname">Full Name</label>
+        <input type="text" id="nombreCompleto" name="nombreCompleto" >
+        
+        <label for="username">Username</label>
+        <input type="text" id="user" name="user" >
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" >
+
+        <button type="submit">Register</button>
+    </form>
+    <div class="login-link">
+        <p>Already have an account? <a href="/login">Login here</a></p>
+    </div>
+
+</div>
+
+
+
+
+
+    </div>
+</body>
+</html>

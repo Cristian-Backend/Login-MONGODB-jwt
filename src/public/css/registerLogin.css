@@ -1,0 +1,89 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the register form */
+.register-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.register-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Form styling */
+.register-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-container label {
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.register-container input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+.register-container input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styling */
+.register-container button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Link to login page */
+.register-container .login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-container .login-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-container .login-link a:hover {
+    text-decoration: underline;
+}

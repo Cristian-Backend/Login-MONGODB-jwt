@@ -1,0 +1,20 @@
+.error-message {
+    color: #ff0000; /* Rojo para mensajes de error */
+    background-color: #ffe6e6; /* Fondo claro */
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+.error-messages {
+    color: red; /* Cambia el color del texto a rojo */
+    border: 1px solid red; /* Opción: añade un borde rojo alrededor del mensaje */
+    background-color: #ffe6e6; /* Opción: un fondo ligeramente rosado para mayor visibilidad */
+    padding: 10px; /* Espaciado alrededor del texto */
+    margin: 15px 0; /* Espaciado vertical para separar de otros elementos */
+    border-radius: 5px; /* Bordes redondeados opcional */
+}
