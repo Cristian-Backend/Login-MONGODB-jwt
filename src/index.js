@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import dbConnection from './database/db.js'; 
 import Router from './routes/user.routes.js';
 import cookieParser from 'cookie-parser';
-import path from 'path'; // Importar el módulo path
+import path from 'path'; 
 
 // Cargar variables de entorno
 dotenv.config();
@@ -13,12 +13,15 @@ const app = express();
 // Habilitar cookies
 app.use(cookieParser());
 
+// Obtener el directorio actual del módulo
+const __dirname = path.resolve(); // Obtener el directorio actual
+
 // Establecer la ubicación de las vistas y el motor de plantillas
-app.set('views', path.join(process.cwd(), 'src', 'views')); // Usar path.join para mayor compatibilidad
+app.set('views', path.join(__dirname, 'src', 'views')); // Usar path.join para mayor compatibilidad
 app.set('view engine', 'ejs'); // Establecer ejs como motor de plantillas
 
 // Configurar carpeta estática para recursos públicos
-app.use(express.static(path.join(process.cwd(), 'src', 'public'))); // Asegúrate de que la ruta sea correcta
+app.use(express.static(path.join(__dirname, 'src', 'public'))); // Asegúrate de que la ruta sea correcta
 
 // Parsear datos de formularios
 app.use(express.urlencoded({ extended: true }));
