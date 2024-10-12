@@ -37,7 +37,7 @@ const register = async (req, res) => {
 };
 
 
-const login = async (req, res = response) => {
+const login = async (req, res ) => {
   const { user, password } = req.body;
 
   try {
@@ -68,7 +68,7 @@ const login = async (req, res = response) => {
       // Redirigir a la vista index.ejs después del login exitoso
       return res.redirect('/');
   } catch (error) {
-      console.log(error);
+      console.log(error.message);
       return res.render('login', { errors: ['Error al procesar la solicitud'] });
   }
 };
